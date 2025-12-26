@@ -12,13 +12,12 @@ export default function GeneratedGames() {
     const navigate = useNavigate();
     const location = useLocation();
     const { lottery, quantity, revealed } = location.state || {}; // { lottery: Lottery, quantity: number, revealed?: boolean }
-    const [games, setGames] = useState<Game[]>([]);
+    const [, setGames] = useState<Game[]>([]);
     const [isRevealed, setIsRevealed] = useState(false);
 
     // Fallbacks
     const defaultColor = '#bc4287';
     const color = lottery?.color || defaultColor;
-    const name = lottery?.name || 'LOTOFÁCIL';
 
     useEffect(() => {
         if (lottery && quantity) {
