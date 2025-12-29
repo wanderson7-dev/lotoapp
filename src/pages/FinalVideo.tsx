@@ -1,10 +1,9 @@
 // @ts-nocheck
 import { useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 export default function FinalVideo() {
     const location = useLocation();
-    const navigate = useNavigate();
     const { lottery, quantity } = location.state || {};
 
     useEffect(() => {
@@ -40,10 +39,7 @@ export default function FinalVideo() {
     }, []);
 
     const handleStart = () => {
-        // This is the final step. Where should it go? 
-        // Usually checkout. For now, we'll just alert or navigate to home.
-        alert("Redirecionando para o checkout...");
-        // navigate('/checkout', { state: { lottery, quantity } });
+        window.location.href = "https://go.perfectpay.com.br/PPU38CQ5AKU";
     };
 
     return (
