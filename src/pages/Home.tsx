@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Clover, Dices, X, ChevronRight, Trophy } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { Logo } from '../components/Logo';
 
 interface Lottery {
     id: string;
@@ -81,14 +82,7 @@ export default function Home() {
         <div className="flex flex-col min-h-screen bg-gray-50 font-sans text-gray-900">
             {/* Header */}
             <header className="sticky top-0 z-20 bg-white/90 backdrop-blur-md border-b border-gray-100 px-6 py-4 flex justify-between items-center shadow-sm">
-                <div className="flex items-center gap-2">
-                    <div className="p-2 bg-gradient-to-br from-green-500 to-emerald-700 rounded-lg shadow-md">
-                        <Clover size={20} className="text-white" />
-                    </div>
-                    <span className="font-extrabold text-xl tracking-tight text-gray-800">
-                        LOTOAPP
-                    </span>
-                </div>
+                <Logo />
                 {/* Profile placeholder or setting icon could go here */}
                 <div className="w-8 h-8 rounded-full bg-gray-200 border-2 border-white shadow-sm overflow-hidden">
                     <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="User" />

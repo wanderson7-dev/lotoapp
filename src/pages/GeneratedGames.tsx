@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Download, Clover, Lock, TrendingUp, DollarSign } from 'lucide-react';
+import { Download, Lock, TrendingUp, DollarSign } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { Logo } from '../components/Logo';
 import '../index.css';
 
 interface Game {
@@ -47,10 +48,7 @@ export default function GeneratedGames() {
             {/* Header LOTOAPP */}
             <div className="w-full py-4 bg-white flex justify-center items-center shadow-sm">
                 <div className="flex items-center gap-2">
-                    <Clover className="text-[#fbc02d]" size={28} fill="#fbc02d" />
-                    <span className="text-gray-400 font-bold text-xl tracking-widest uppercase" style={{ fontFamily: 'var(--font-display)' }}>
-                        LOTOAPP
-                    </span>
+                    <Logo />
                 </div>
             </div>
 
