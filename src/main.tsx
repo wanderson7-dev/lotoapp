@@ -12,6 +12,7 @@ import FinalVideo from './pages/FinalVideo'
 import Up1 from './pages/Up1'
 import DwUp1 from './pages/DwUp1'
 import Up2 from './pages/Up2'
+import Obrigado from './pages/Obrigado'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -27,6 +28,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/Up1" element={<Up1 />} />
         <Route path="/dw-up1" element={<DwUp1 />} />
         <Route path="/up2" element={<Up2 />} />
+        <Route path="/obrigado" element={<Obrigado />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
