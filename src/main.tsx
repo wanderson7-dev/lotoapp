@@ -24,7 +24,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/video-reveal" element={<VideoReveal />} />
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/final-video" element={<FinalVideo />} />
-        <Route path="/up1" element={<Up1 />} />
+        <Route path="/Up1" element={<Up1 />} />
         <Route path="/dw-up1" element={<DwUp1 />} />
         <Route path="/up2" element={<Up2 />} />
       </Routes>
